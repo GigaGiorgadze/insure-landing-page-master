@@ -1,0 +1,266 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+}
+.navbar{
+    background-color: white !important;
+    padding: 1% 5% !important;
+    z-index: 200;
+}
+.navlink:hover{
+    color: black !important;
+}
+.bordered{
+    padding: 0;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+
+.bordered:hover{
+    cursor: pointer;
+    background-color: black;
+}
+.bordered:hover .navbtn{
+    color: white !important;
+}
+header{
+    margin-top: 10vh;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 6% 8%;
+    background-image: url('./images/bg-pattern-intro-right-desktop.svg'),url('./images/bg-pattern-intro-left-desktop.svg'),url('./images/image-intro-desktop.jpg'),linear-gradient(180deg, hsl(256, 26%, 20%) 75%, white 30%);
+    background-repeat: no-repeat;
+    background-position: top right,bottom left,85% 50%;
+    background-size:30%,15% 50%,39% 75%,100% 100%; 
+}
+.headerText{
+    color: white !important;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.headerText h1{
+
+    font-family: 'DM Serif Display', serif;
+    font-size: 60px;
+}
+.headerText hr{
+    border: 1px solid white;
+    width: 40%;
+   margin: 0;
+   margin-bottom: 10%;
+}
+.headerText button{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 1% 5%;
+}
+.headerText button:hover{
+    background-color: white;
+    color: hsl(256, 26%, 20%);
+    cursor: pointer;
+}   
+.headerText p{
+    font-size: 13px;
+}
+.different{
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    padding: 0 10%;
+    box-sizing: border-box;
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 15%;
+
+}
+.different>h1{
+    font-weight: bolder;
+  
+}
+.different hr{
+    width: 10%;
+    border: 1px solid hsl(273, 4%, 51%);
+    margin: 2% 0;
+}
+.diffChild{
+    width: auto;
+    height: auto;
+    display: flex;
+    padding: 10% 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;    
+    width: 350px;
+    padding: 1%;
+    box-sizing: border-box;
+}
+.find{
+    background-color: hsl(256, 26%, 20%);
+    color: white;
+    padding: 4% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('./images/bg-pattern-how-we-work-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+.findText{
+    width: 35%;
+}
+.findText h1{
+    font-family: 'DM Serif Display', serif;
+    margin: 0;
+}
+.find button{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 0.3% 2%;   
+}
+.find button:hover{
+    background-color: white;
+    color: hsl(256, 26%, 20%);
+    cursor: pointer;
+}
+footer{
+    background-color: hsl(0, 0%, 98%);
+    padding: 2% 5%;
+    background-image: url('./images/bg-pattern-footer-desktop.svg');
+    background-repeat: no-repeat;
+}
+.footerTop{
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid  hsl(275, 33%, 86%);
+}
+.footerIcons{
+    display: flex;   
+    justify-content: space-around;
+     width: 10%;
+}
+.footerIcons i{
+    font-size: 20px;
+    color: hsl(273, 4%, 51%);
+    margin-left: 1%;
+}
+.footerIcons i:hover{
+    color: black;
+    cursor: pointer;
+}
+.footerBot{
+    display: flex;
+    padding-top: 2%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.column p{
+    color: hsl(273, 4%, 51%);
+}
+.column a{
+    margin: 1%;
+    color: hsl(256, 26%, 20%) !important;
+    font-weight: bold;
+}
+.footerBot .column{
+    width: 250px;
+}
+@media screen and (max-width:600px) {
+    header{
+        height: 130vh;
+        display: flex;
+        padding: 0;
+        align-items: flex-end;
+        justify-content: center;
+        background-image:url('./images/image-intro-mobile.jpg'), linear-gradient(180deg, hsl(256, 26%, 20%) 90%, white 30%);
+        background-size:unset; 
+        background-size: 100vw 50vh, 100% 200%;
+    }
+    .headerText{
+        width: 100%;
+        height: 80vh;
+        background-image: url('./images/bg-pattern-intro-left-mobile.svg'),url('./images/bg-pattern-intro-right-mobile.svg');
+        background-repeat: no-repeat;
+        background-position: top left, 100% 100%;
+        text-align: center;
+        padding: 4%;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .headerText h1{
+        font-size: 40px;
+    }
+    .headerText hr{
+       display: none;
+    }  
+    .headerText p{
+        font-size: 16px;
+    }
+    .different{
+        padding: 0;
+        align-items: center;
+        padding-bottom: 15%;
+    }
+    .different>h1{
+        font-weight: bolder;
+    }
+    .different hr{
+        width: 40%;
+    }
+
+    .column{
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+        width: 250px;
+        padding: 0%;
+    }
+    .column h1{
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    .find{
+        padding: 15% 10%;
+        flex-direction: column;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('./images/bg-pattern-how-we-work-mobile.svg');
+        text-align: center;
+    }
+    .findText{
+        width: 100%;
+    }
+    .findText h1{
+        margin-bottom: 30px;
+    }
+    .footerTop{
+        height: auto;
+        flex-direction: column;
+    }
+    .footerTop>*{
+        margin: 5%;
+    }
+    .footerBot{
+        justify-content: center;
+    }
+    .footerBot .column{
+        margin-top: 10%;
+    }
+}
